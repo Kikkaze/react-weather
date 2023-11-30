@@ -5,10 +5,10 @@ import Weather from "./Weather";
 export default function App() {
   return (
     <div className="App">
+          <Weather />
      <div className="container"> 
-       Weather App
-    </div>
-    <Weather />
+      </div>
+    <footer><a href="https://github.com/Kikkaze/react-weather">Open-source code</a> by Federica De Giorgis</footer>
     </div>
   );
 }

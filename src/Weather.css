@@ -1,0 +1,45 @@
+:root {
+    --main-colour: rgb(183, 229, 255);
+    --secondary-colour: rgb(255, 255, 255);
+}
+
+body {
+    background-image: url("./background.jpg");
+}
+
+.Weather {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 100px auto;
+    padding: 50px 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+.forecast {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.singleday {
+    background-color: rgba(183, 229, 255, 0.9);
+    border-radius: 15px;
+    margin: 10px 5px;
+    max-width: 100px;
+    padding: 10px 5px;
+}
+
+.forecast img {
+    max-width: 50px;
+}
+
+.search-button {
+background-color: var(--main-colour);    
+}
+
+.sunicon {
+    max-width: 70px;
+}
