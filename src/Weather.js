@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import FormattedDate from "./FormattedDate";
+import FormattedDate2 from "./FormattedDate2";
 import axios from "axios";
 import "./Weather.css";
 import sunicon from "./sunicon.png";
@@ -9,7 +11,7 @@ export default function Weather(props) {
         console.log(response.data);
         setWeatherData({
             city: response.data.city,
-            date: "November 30, 2023",
+            date: new Date(response.data.time * 1000),
             description: response.data.condition.description,
             feelslike: response.data.temperature.feels_like,
             humidity: response.data.temperature.humidity,
@@ -51,8 +53,8 @@ export default function Weather(props) {
                 <div className="row">
                     <div className="col-6">
                         <ul>
-                            <li>{weatherData.weekday}</li>
-                            <li>{weatherData.date}</li>
+                            <li><FormattedDate date={weatherData.date} /></li>
+                            <li><FormattedDate2 date={weatherData.date} /> </li>
                             <li className="text-capitalize">{weatherData.description}</li>
                         </ul>
                     </div>
