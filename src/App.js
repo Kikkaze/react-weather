@@ -5,10 +5,8 @@ import Weather from "./Weather";
 export default function App() {
   return (
     <div className="App">
-          <Weather />
-     <div className="container"> 
-      </div>
-    <footer><a href="https://github.com/Kikkaze/react-weather">Open-source code</a> by Federica De Giorgis</footer>
+          <Weather defaultCity="Milan"/>
+      <footer>Built with React by Federica De Giorgis and open-source on <a href="https://github.com/Kikkaze/react-weather" target="blank">Github</a>.</footer>
     </div>
   );
 }
