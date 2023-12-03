@@ -20,27 +20,15 @@ ul {
     padding-left: 0;
 }
 
-.forecast {
-    margin: 0 auto;
-    text-align: center;
-}
-
-.singleday {
-    background-color: rgba(183, 229, 255, 0.9);
-    border-radius: 15px;
-    margin: 10px 5px;
-    max-width: 100px;
-    padding: 10px 5px;
-}
-
-.forecast img {
-    max-width: 50px;
-}
-
 .search-button {
-background-color: var(--main-colour);    
-border: none;
-color: black;
+    background-color: var(--main-colour);    
+    border: none;
+    color: black;
+}
+
+.search-button:hover {
+    background-color: var(--main-colour);
+    color: var(--secondary-colour);
 }
 
 .sunicon {

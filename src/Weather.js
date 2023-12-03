@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Weatherinfo from "./Weatherinfo";
 import axios from "axios";
 import "./Weather.css";
-import sunicon from "./sunicon.png";
 
 export default function Weather(props) {
     const [weatherData, setWeatherData] = useState({ ready:false });
@@ -62,38 +61,6 @@ export default function Weather(props) {
                 </div>
               </form>
                 <Weatherinfo data={weatherData} />
-                <div className="row forecast">
-                    <div className="col-2 singleday">
-                        <h4>Fri</h4>
-                        <img src={sunicon} alt="Sun Icon"></img>
-                        <div>14° / 10°</div>
-                    </div>
-                    <div className="col-2 singleday">
-                        <h4>Sat</h4>
-                        <img src={sunicon} alt="Sun Icon"></img>
-                        <div>14° / 10°</div>
-                    </div>
-                    <div className="col-2 singleday">
-                        <h4>Sun</h4>
-                        <img src={sunicon} alt="Sun Icon"></img>
-                        <div>14° / 10°</div>
-                    </div>
-                    <div className="col-2 singleday">
-                        <h4>Mon</h4>
-                        <img src={sunicon} alt="Sun Icon"></img>
-                        <div>14° / 10°</div>
-                    </div>
-                    <div className="col-2 singleday">
-                        <h4>Tue</h4>
-                        <img src={sunicon} alt="Sun Icon"></img>
-                        <div>14° / 10°</div>
-                    </div>
-                    <div className="col-2 singleday">
-                        <h4>Wed</h4>
-                        <img src={sunicon} alt="Sun Icon"></img>
-                        <div>14° / 10°</div>
-                    </div>
-                </div>
             </div>
         )
     } else {  
