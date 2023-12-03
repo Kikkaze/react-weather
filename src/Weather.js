@@ -15,7 +15,7 @@ export default function Weather(props) {
             description: response.data.condition.description,
             feelslike: response.data.temperature.feels_like,
             humidity: response.data.temperature.humidity,
-            icon: sunicon,
+            icon: `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`,
             ready: true,
             temperature: response.data.temperature.current,
             weekday: "Thursday",
