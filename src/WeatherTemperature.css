@@ -1,0 +1,34 @@
+a {
+    color: white;
+    text-decoration: none;
+    padding: 0 6px 2px;
+}
+
+a:hover {
+    color: black;
+}
+
+.clickableUnit {
+    background-color: rgba(183, 229, 255, 0.4);
+    border-radius: 2px;
+    padding: 0 6px;
+    
+}
+
+.clickableUnitFahrenheit {
+    background-color: rgba(183, 229, 255, 0.4);
+    border-radius: 2px;
+    padding: 0 8px;
+}
+
+.selectedUnit {
+    background-color: rgb(183, 229, 255);
+    border-radius: 2px;
+    padding: 0 6px;
+}
+
+.selectedUnitFahrenheit {
+    background-color: rgb(183, 229, 255);
+    border-radius: 2px;
+    padding: 0 8px;
+}
