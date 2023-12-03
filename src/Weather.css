@@ -40,6 +40,7 @@ ul {
 .search-button {
 background-color: var(--main-colour);    
 border: none;
+color: black;
 }
 
 .sunicon {
