@@ -32,3 +32,7 @@ a:hover {
     border-radius: 2px;
     padding: 0 8px;
 }
+
+.WeatherTemperature {
+    padding: 20px 0;
+}

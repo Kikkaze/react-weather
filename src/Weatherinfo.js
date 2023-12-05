@@ -6,12 +6,12 @@ import WeatherTemperature from "./WeatherTemperature";
 export default function Weatherinfo(props) {
     return (
         <div className="WeatherInfo">
-            <h1>{props.data.city}</h1>
-                <div className="d-flex">
-                    <img src={props.data.icon} alt={props.data.description} className="sunicon"></img>
+                <div className="row">
+                    <h1 className="col-7 p-3">{props.data.city}</h1>
+                    <img src={props.data.icon} alt={props.data.description} className="sunicon col-2 img-fluid"></img>
                     <WeatherTemperature celsius={props.data.temperature} />
                 </div>
-                <div className="row">
+                <div className="row ps-1">
                     <div className="col-6">
                         <ul>
                             <li><FormattedDate date={props.data.date} /></li>

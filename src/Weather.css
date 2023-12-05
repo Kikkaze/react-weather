@@ -7,17 +7,21 @@ body {
     background-image: url("./background.jpg");
 }
 
-.Weather {
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 10px;
-    max-width: 700px;
-    margin: 100px auto 50px;
-    padding: 50px 20px;
+footer {
+    margin-bottom: 100px;
 }
 
 ul {
     list-style: none;
     padding-left: 0;
+}
+
+.Weather {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 100px auto 20px;
+    padding: 50px 20px;
 }
 
 .search-button {
@@ -32,7 +36,7 @@ ul {
 }
 
 .sunicon {
-    max-width: 70px;
+    max-width: 200px;
 }
 
 .temperature {

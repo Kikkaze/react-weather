@@ -1,0 +1,20 @@
+.forecast {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.singleday {
+    background-color: rgba(183, 229, 255, 0.9);
+    border-radius: 15px;
+    margin: 10px 5px;
+    max-width: 100px;
+    padding: 10px 5px;
+}
+
+.forecast img {
+    max-width: 50px;
+}
+
+.sunicon {
+    max-width: 70px;
+}
