@@ -15,7 +15,7 @@ export default function Weather(props) {
             description: response.data.condition.description,
             feelslike: response.data.temperature.feels_like,
             humidity: response.data.temperature.humidity,
-            icon: `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`,
+            icon: response.data.condition.icon_url,
             ready: true,
             temperature: response.data.temperature.current,
             weekday: "Thursday",
@@ -62,7 +62,7 @@ export default function Weather(props) {
                 </div>
               </form>
                 <Weatherinfo data={weatherData} />
-                <Forecast />
+                <Forecast data={weatherData} />
             </div>
         )
     } else {  
