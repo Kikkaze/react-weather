@@ -45,7 +45,6 @@ export default function Weather(props) {
                 <div className="row mb-5">
                   <div className="col-9">
                     <input
-                      autofocus="on"
                       type="search"
                       placeholder="Search for a city"
                       className="form-control search-form search-bar"
