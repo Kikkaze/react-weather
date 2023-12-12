@@ -1,10 +1,12 @@
 :root {
     --main-colour: rgb(183, 229, 255);
     --secondary-colour: rgb(255, 255, 255);
+    --text-colour: rgb(45, 86, 145);
 }
 
 body {
-    background-image: url("./background.jpg");
+    background-image: url("./images/background.jpg");
+    color: var(--text-colour);
 }
 
 footer {
@@ -25,9 +27,9 @@ ul {
 }
 
 .search-button {
-    background-color: var(--main-colour);    
+    background-color: var(--main-colour);
     border: none;
-    color: black;
+    color: var(--text-colour);
 }
 
 .search-button:hover {
@@ -35,10 +37,26 @@ ul {
     color: var(--secondary-colour);
 }
 
-.sunicon {
-    max-width: 200px;
-}
-
 .temperature {
     font-size: 30px;
+}
+
+@media (max-width: 800px) {
+
+    form {
+        margin-bottom: 0;
+    }
+
+    h1 {
+        padding: 0;
+    }
+
+    img {
+        max-width: 50px;
+    }
+
+    .left-column {
+        padding: 0;
+    }
+
 }

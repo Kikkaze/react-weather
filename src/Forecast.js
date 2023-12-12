@@ -10,10 +10,8 @@ export default function Forecast(props) {
     useEffect(() => {setLoaded(false);}, [props.data.city]);
 
     function handleResponse(response) {
-        console.log(response.data);
         setForecastData(response.data.daily);
         setLoaded(true);
-        console.log(response);
     }
  
     if (loaded) {

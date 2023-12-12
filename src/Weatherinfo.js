@@ -9,8 +9,12 @@ export default function Weatherinfo(props) {
         <div className="WeatherInfo">
                 <div className="row">
                     <h1 className="col-7 p-3">{props.data.city}</h1>
-                    <WeatherIcon image={props.data.icon} alt={props.data.description}/>
+                    <div className="col-2 img-fluid">
+                    <WeatherIcon image={props.data.iconcode} alt={props.data.description}/>
+                    </div>
+                    <div className="WeatherTemperature col-3">
                     <WeatherTemperature celsius={props.data.temperature} />
+                    </div>
                 </div>
                 <div className="row ps-1 justify-content-between">
                     <div className="col-5">

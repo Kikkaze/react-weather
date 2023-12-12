@@ -16,6 +16,7 @@ export default function Weather(props) {
             feelslike: response.data.temperature.feels_like,
             humidity: response.data.temperature.humidity,
             icon: response.data.condition.icon_url,
+            iconcode: response.data.condition.icon,
             ready: true,
             temperature: response.data.temperature.current,
             weekday: "Thursday",
@@ -43,7 +44,7 @@ export default function Weather(props) {
             <div className="Weather">
                 <form onSubmit={handleSubmit}>
                 <div className="row mb-5">
-                  <div className="col-9">
+                  <div className="col-9 left-column">
                     <input
                       type="search"
                       placeholder="Search for a city"
