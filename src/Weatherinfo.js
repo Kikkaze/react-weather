@@ -3,6 +3,7 @@ import FormattedDate from "./FormattedDate";
 import FormattedDate2 from "./FormattedDate2";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
+import "./WeatherInfo.css";
 
 export default function Weatherinfo(props) {
     return (
@@ -12,12 +13,12 @@ export default function Weatherinfo(props) {
                     <div className="col-2 img-fluid">
                     <WeatherIcon image={props.data.iconcode} alt={props.data.description}/>
                     </div>
-                    <div className="WeatherTemperature col-3">
+                    <div className="col-3 WeatherTemperature">
                     <WeatherTemperature celsius={props.data.temperature} />
                     </div>
                 </div>
                 <div className="row ps-1 justify-content-between">
-                    <div className="col-5">
+                    <div className="col-5 ul-colums">
                         <ul>
                             <li><FormattedDate date={props.data.date} /></li>
                             <li><FormattedDate2 date={props.data.date} /> </li>

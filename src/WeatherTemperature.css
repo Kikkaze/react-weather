@@ -1,5 +1,11 @@
+:root {
+    --main-colour: rgb(183, 229, 255);
+    --secondary-colour: rgb(255, 255, 255);
+    --text-colour: rgb(45, 86, 145);
+}
+
 a {
-    color: white;
+    color: var(--secondary-colour);
     text-decoration: none;
     padding: 0 6px 2px;
 }
@@ -11,6 +17,7 @@ a:hover {
 .clickableUnit {
     background-color: rgba(183, 229, 255, 0.4);
     border-radius: 2px;
+    font-size: 20px;
     padding: 0 6px;
     
 }
@@ -18,18 +25,21 @@ a:hover {
 .clickableUnitFahrenheit {
     background-color: rgba(183, 229, 255, 0.4);
     border-radius: 2px;
+    font-size: 20px;
     padding: 0 8px;
 }
 
 .selectedUnit {
     background-color: rgb(183, 229, 255);
     border-radius: 2px;
+    font-size: 20px;
     padding: 0 6px;
 }
 
 .selectedUnitFahrenheit {
     background-color: rgb(183, 229, 255);
     border-radius: 2px;
+    font-size: 20px;
     padding: 0 8px;
 }
 
@@ -37,8 +47,38 @@ a:hover {
     padding: 20px 0;
 }
 
+.temperature {
+    font-size: 30px;
+}
+
 @media (max-width: 800px) {
-    .temperature {
-        font-size: 5px;
+   
+
+    .selectedUnit {
+        background-color: transparent;
+        font-size: 15px;
     }
+
+    .clickableUnit {
+        background-color: transparent;
+        color: var(--main-colour);
+        font-size: 15px;
+    }
+
+    .selectedUnitFahrenheit {
+        background-color: transparent;
+        font-size: 15px;
+    } 
+
+    .clickableUnitFahrenheit {
+        background-color: transparent;
+        color: var(--main-colour);
+        font-size: 15px;
+    }
+
+    .temperature {
+        font-size: 20px;
+    }
+    
+
 }

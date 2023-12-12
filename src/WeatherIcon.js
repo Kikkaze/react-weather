@@ -22,75 +22,75 @@ export default function WeatherIcon (props) {
     
     if (props.image === "clear-sky-day") {
     return (
-        <img src={clearSkyDay} alt={props.alt}></img>
+        <img src={clearSkyDay} alt={props.alt} width="90"></img>
     )
 } else if (props.image === "clear-sky-night") {
     return (
-        <img src={clearSkyNight} alt={props.alt}></img>
+        <img src={clearSkyNight} alt={props.alt} width="90"></img>
     )
     } else if (props.image === "broken-clouds-day") {
         return (
-            <img src={brokenCloudsDay} alt={props.alt}></img>
+            <img src={brokenCloudsDay} alt={props.alt} width="90"></img>
         )
         } else if (props.image === "broken-clouds-night") {
             return (
-                <img src={brokenCloudsNight} alt={props.alt}></img>
+                <img src={brokenCloudsNight} alt={props.alt} width="90"></img>
             )
             } else if (props.image === "few-clouds-day") {
                 return (
-                    <img src={fewCloudsDay} alt={props.alt}></img>
+                    <img src={fewCloudsDay} alt={props.alt} width="90"></img>
                 )
                 } else if (props.image === "few-clouds-night") {
                     return (
-                        <img src={fewCloudsNight} alt={props.alt}></img>
+                        <img src={fewCloudsNight} alt={props.alt} width="90"></img>
                     )
                     } else if (props.image === "mist-day") {
                         return (
-                            <img src={mistDay} alt={props.alt}></img>
+                            <img src={mistDay} alt={props.alt} width="90"></img>
                         )
                         } else if (props.image === "mist-night") {
                             return (
-                                <img src={mistNight} alt={props.alt}></img>
+                                <img src={mistNight} alt={props.alt} width="90"></img>
                             )
                             } else if (props.image === "rain-day") {
                                 return (
-                                    <img src={rainDay} alt={props.alt}></img>
+                                    <img src={rainDay} alt={props.alt} width="90"></img>
                                 )
                                 } else if (props.image === "rain-night") {
                                     return (
-                                        <img src={rainNight} alt={props.alt}></img>
+                                        <img src={rainNight} alt={props.alt} width="90"></img>
                                     )
                                     } else if (props.image === "scattered-clouds-day") {
                                         return (
-                                            <img src={scatteredCloudsDay} alt={props.alt}></img>
+                                            <img src={scatteredCloudsDay} alt={props.alt} width="90"></img>
                                         )
                                         } else if (props.image === "scattered-clouds-night") {
                                             return (
-                                                <img src={scatteredCloudsNight} alt={props.alt}></img>
+                                                <img src={scatteredCloudsNight} alt={props.alt} width="90"></img>
                                             )
                                             } else if (props.image === "shower-rain-day") {
                                                 return (
-                                                    <img src={showerRainDay} alt={props.alt}></img>
+                                                    <img src={showerRainDay} alt={props.alt} width="90"></img>
                                                 )
                                                 } else if (props.image === "shower-rain-night") {
                                                     return (
-                                                        <img src={showerRainNight} alt={props.alt}></img>
+                                                        <img src={showerRainNight} alt={props.alt} width="90"></img>
                                                     )
                                                     } else if (props.image === "snow-day") {
                                                         return (
-                                                            <img src={snowDay} alt={props.alt}></img>
+                                                            <img src={snowDay} alt={props.alt} width="90"></img>
                                                         )
                                                         } else if (props.image === "snow-night") {
                                                             return (
-                                                                <img src={snowNight} alt={props.alt}></img>
+                                                                <img src={snowNight} alt={props.alt} width="90"></img>
                                                             )
                                                             } else if (props.image === "thunderstorm-day") {
                                                                 return (
-                                                                    <img src={thundersormDay} alt={props.alt}></img>
+                                                                    <img src={thundersormDay} alt={props.alt} width="90"></img>
                                                                 )
                                                                 } else if (props.image === "thunderstorm-night") {
                                                                     return (
-                                                                        <img src={thundersormNight} alt={props.alt}></img>
+                                                                        <img src={thundersormNight} alt={props.alt} width="90"></img>
                                                                     )
                                                                     }
 };

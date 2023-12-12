@@ -37,10 +37,6 @@ ul {
     color: var(--secondary-colour);
 }
 
-.temperature {
-    font-size: 30px;
-}
-
 @media (max-width: 800px) {
 
     form {
