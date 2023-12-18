@@ -46,11 +46,11 @@ export default function WeatherIcon (props) {
                     )
                     } else if (props.image === "mist-day") {
                         return (
-                            <img src={mistDay} alt={props.alt} width="90"></img>
+                            <img src={mistDay} alt={props.alt} width="80"></img>
                         )
                         } else if (props.image === "mist-night") {
                             return (
-                                <img src={mistNight} alt={props.alt} width="90"></img>
+                                <img src={mistNight} alt={props.alt} width="80"></img>
                             )
                             } else if (props.image === "rain-day") {
                                 return (
